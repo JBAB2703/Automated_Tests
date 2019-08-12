@@ -1,4 +1,5 @@
 ﻿using System;
+using TestLibrary;
 
 namespace Automated_TestProject
 {
@@ -6,7 +7,11 @@ namespace Automated_TestProject
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var Functions = new Functions();
+
+            var answer = Functions.Add1(3);
+
+            Console.WriteLine($"Answer is {answer}");
         }
     }
 }
